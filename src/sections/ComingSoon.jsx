@@ -1,11 +1,13 @@
 function ComingSoon() {
   return (
     <section className="entrance-message">
-      <div className="h-full col-center gap-10">
+      <div className="h-full col-center gap-4">
         <img src="/images/logo.webp" alt="logo" className="entrance-logo" />
         <div className="text-wrapper">
           <h3 className="gradient-title">
-            Coming <br /> May 26th <br /> 2026
+            Coming <br />
+            May 26
+            <br /> 2026
           </h3>
         </div>
         <div className="flex-center gap-10">
