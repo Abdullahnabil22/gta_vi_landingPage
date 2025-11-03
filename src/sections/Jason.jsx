@@ -4,22 +4,22 @@ function Jason() {
   useGSAP(() => {
     gsap.set(".jason", { marginTop: "-80vh" });
 
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".jason",
-        start: "top 90%",
-        end: "10% center",
-        scrub: 2,
-      },
-    });
-
-    tl.to(".first-vd", { opacity: 0, duration: 1, ease: "power1.inOut" });
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: ".jason",
+          start: "top 90%",
+          end: "10% center",
+          scrub: 2,
+        },
+      })
+      .to(".first-vd", { opacity: 0, duration: 1, ease: "power1.inOut" });
 
     gsap.to(
-      ".json .img-box",
+      ".jason .img-box",
       {
         scrollTrigger: {
-          trigger: ".json",
+          trigger: ".jason",
           start: "top center",
           end: "80% center",
           scrub: 2,
